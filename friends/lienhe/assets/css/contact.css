@@ -1,0 +1,118 @@
+body {
+    font-size: 1.4rem;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.list-group-item {
+    padding: 5px 0px !important;
+    border: none !important;
+}
+
+.form-control {
+    border-radius: 0 !important;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.star {
+    color: red;
+}
+
+.btn {
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #ddac55;
+}
+
+.map {
+    margin-top: 80px;
+}
+
+.fas {
+    color: #ddac55;
+    width: 20px;
+}
+
+.phone,
+.email {
+    color: #333f48;
+    text-decoration: none;
+}
+
+.phone:hover,
+.email:hover {
+    color: #ddac55;
+}
+
+.row__menu{
+    padding-top: 10px;
+}
+
+.nav-link{
+    margin-left: 10px;
+}
+.nav-link svg {
+    color: #333f48;
+}
+.menu__tel{
+    text-decoration: none !important;
+}
+.menu__tel:hover > .tel__phone:hover{
+    color: #ddac55;
+}
+.tel__phone{
+    color:#000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 5px;
+}
+.tel__phone:hover{
+    color: #ddac55;
+}
+.menu-togger{
+    background-color: #ddac55;
+    padding: 15px;
+    text-decoration: none;
+}
+.menu-togger:hover{
+    background-color: #a89307;    ;
+}
+.menu-togger i {
+    font-size: 20px;
+    color: #fff !important;
+}
+.bread-crumb{
+    background-image: url(https://bizweb.dktcdn.net/100/366/378/themes/736342/assets/br-bg.png?1629431947229);
+    background-position: 50% 100%;
+    background-size: cover;
+    padding-bottom: 80px;
+    height: 300px;
+}
+.breadcrumb{
+    margin-top: 180px;
+}
+.breadcrumb-item a {
+    color: #333f48;
+}
+.breadcrumb-item a:hover{
+    color: #ddac55;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+}

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Evo Cake</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="icon"
+            href="https://bizweb.dktcdn.net/100/366/378/themes/736342/assets/logo.png?1629431966576"
+            type="image/x-icon" />
+<!-- <link rel="stylesheet" href="/assets/font/fontawesome-free-5.15.4/css/all.css">
+<link rel="stylesheet" href="/assets/font/themify-icons/themify-icons.css"> -->
+<link rel="stylesheet" href="./themify-icons/themify-icons.css">
+ <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+
+ body {
+  margin: 0;
+  background-color: #FFF;
+  padding:0;
+  overflow-x: hidden;
+} 
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  font-size: 20px;
+  text-align: justify;
+  color: #333f48;    
+}
+
+* {
+    box-sizing:border-box
+   }
+         
+          /* Slideshow container */
+          .slideshow-container {
+            
+            position: relative;
+            margin: auto;
+          }
+          /* Ẩn các slider */
+          .mySlides {
+              display: none;
+          }
+
+          /* định dạng các chấm chuyển đổi các slide */
+          .dot {
+            cursor:pointer;
+            height: 13px;
+            width: 13px;  
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+			margin-top: 3px;
+          }
+		  .dot3 {text-align: center;}
+		  
+          /* khi được hover, active đổi màu nền */
+          .active, .dot:hover {
+            background-color: #ddac55 ;
+          }
+
+          /* hiệu ứng khi chuyển đổi các slide */
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 3s;
+            animation-name: fade;
+            animation-duration: 3s;
+          }
+
+          @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+
+          @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+
+  img.a {
+    display: block; 
+	margin-left: auto; 
+	margin-right: 50px; 
+	margin-top: 60px; 
+	width:650px; 
+	height:400px; 
+	border-radius: 10px;
+}
+  
+  img.icon {
+    width: 70px; 
+	height: 70px; 
+	border-radius: 50%;
+}
+  
+ .title h2 {
+   margin-top: 50px; 
+   text-align: center;
+   font-family: 'Exo', sans-serif;
+   font-size: 25px;
+}
+ .title hr {
+   margin-left: 600px; 
+   margin-right: 600px;
+   height: 0px;
+   border: 0;
+   border-top: 2px solid #ddac55;
+   margin-top: 20px;
+ }
+ .column1-row1 hr{
+    margin-left: 50px;
+	height: 1px;
+	margin-top: 20px;
+}
+  h3 { 
+   margin-top: 60px; 
+   text-align: center;
+   font-family: 'Pacifico', cursive;
+}
+ .text1 {
+    margin-top: 20px;
+	margin-left: 50px; 
+	font-family: 'Exo', sans-serif; 
+}
+ .text2 {
+    margin-left: 50px;
+	margin-top: 30px;
+	font-family: 'Exo', sans-serif; 
+	margin-bottom: 5px;
+}
+  
+ .lienket a{
+    text-decoration: none;
+}
+ .lienket .csw-btn-button {
+    margin-left:50px; 
+    cursor: pointer;
+	font-size: 14px;
+	padding: 8px 16px; 
+	color: #fff !important;
+	background-color: #ddac55;
+	border-radius: 15px; 
+	border: 1px solid #ddac55; 
+	transition: 0.4s;
+}
+ .lienket .csw-btn-button:hover {
+    padding: 12px 24px;
+	font-size: 17px;
+}
+.column1-row1 { line-height: 3rem;}
+ .column1-row2 {
+    margin-top: 50px;
+	text-align:center;
+	font-weight: 600; 
+}
+ .column2-row2 {
+    margin-top: 60px;
+    text-align:center;
+	font-weight: 600; 
+}
+  .column1-row2 .muc2 {
+     margin-top: 60px;
+}
+  .column2-row2 .muc4 {
+     margin-top: 60px;
+	 margin-bottom: 50px
+}
+  .bod1 { 
+      border-top: 1.5px solid #ddac55;
+	  border-left: 1.5px solid #ddac55; 
+	  margin-top: 50px;
+	  margin-left: 50px;
+	  border-radius: 15px;
+}
+  .bod2 {
+      border-bottom: 1.5px solid #ddac55;
+	  border-right: 1.5px solid #ddac55; 
+	  margin-top: 80px;
+	  margin-right: 50px;
+	  border-radius: 15px;
+	  margin-bottom: 50px;
+}
+  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  @media screen and (max-width:600px) {
+    .column {
+    width: 100%;
+  } 
+}
+
+/*BEGIN: HEADER INPUT */
+.header__input {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.header__input-background > img{
+    margin-top: -8%;
+    width: 100%;
+}
+
+.header__input-content {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.header__input-list {
+    list-style: none;
+    width: 33.3333%;
+    position: relative;
+}
+
+.header__input-list-right {
+    display: flex;
+}
+
+.header__input-list-right > .header__input-item {
+    align-items: center;
+}
+
+.header__input-item {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.header__input-hotline {
+    line-height: 100px;
+}
+
+.header__input-icon {
+    /* font-size: 1.8rem; */
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    margin-right: 2px;
+}
+
+.header__input-hotline-link,
+.header__input-item-link {
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.header__input-item-link {
+    margin-left: 24px;
+    line-height: 100px;
+}
+
+.header__input-img {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/*  */
+.header__input-img-link {
+    width: 120px;
+    text-align: center;
+}
+
+.header__input-pag {
+    font-size: 1.4rem;
+    font-weight: 601;
+}
+
+.header__input-pag > a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 500;
+    padding: 2px 0;
+}
+
+.header__input-pag > a:hover {
+    color: var(--hover-color);
+}
+
+/* END: HEADER INPUT */
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #545454;
+    --hover-color: #ddac55;
+    --header-height: 174px;
+    --navbar-height: 44px;
+    --header-search-height: calc(var(--header-height) - var(var(--navbar-height)));
+    --border-color: #d6d1d1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ 
+
+ html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+/* font-family: 'Roboto', sans-serif; */
+    box-sizing: border-box;
+} 
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+/* FOOTER */
+.footer {
+    /* margin-top: -6%; */
+    height: 350px;
+    background-color: #fbefe2;
+}
+
+.footer__menu {
+}
+
+.footer__list {
+    display: flex;
+}
+
+.footer__list--register {
+    width: 400px;
+    margin-top: 60px;
+
+}
+
+.footer--register-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+}
+
+.footer--register-des {
+    line-height: 1.6;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.footer--register-email {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #505050;
+    border-radius: 25px;
+    color: #505050;
+    padding-right: 60px;
+    height: 44px;
+    width: 380px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.4rem;
+    outline: none;
+    opacity: 0.8;
+}
+
+.footer--register-email-icon {
+    position: absolute;
+    left: calc(33% - 12px);
+    font-size: 1.5rem;
+    line-height: 2.9;
+    color: var(--text-color);
+}
+
+.footer--register-email-icon:hover {
+    color: var(--hover-color);
+}
+
+.footer__list--address {
+    margin-right: 20px;
+    width: 400px;
+    margin-top: 44px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.footer--address-logo {
+
+}
+
+.footer--address-logo-img {
+    margin-bottom: 30px;
+    width: 120px;
+}
+
+.footer--address-des {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+
+}
+
+.footer--address-phone {
+    font-size: 1.4rem;
+    line-height: 1.6;
+
+}
+
+.footer--address-phone a, .footer--address-email a{
+    color: var(--hover-color);
+    text-decoration: none;
+}
+
+.footer--address-phone a:hover, .footer--address-email a:hover{
+    color: var(--hover-color);
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.footer--address-email {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.footer__list--commit {
+    width: 400px;
+    margin-top: 60px;
+    text-align: left;
+}
+
+.footer--commit-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+}
+
+.footer--commit-item {
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer--commit-icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: #ddac55;
+}
+
+.footer--commit-des {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+/* COPYRIGHT */
+.footer__social {
+    text-align: center;
+	background-color: #fbefe2;
+}
+
+.footer__separation {
+    margin: 24px 0;
+    border: 0.5px solid var(--hover-color);
+    opacity: 0.5;
+}
+
+.footer__social-list {
+    font-size: 1.8rem;
+}
+
+.footer__social-icon {
+    margin: 0 4px;
+    opacity: 0.6;
+}
+
+.footer__social-icon:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.footer__copyright {
+    margin-top: 14px;
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header__input">
+            <div class="header__input-background">
+                <img src="https://bizweb.dktcdn.net/100/366/378/themes/736342/assets/br-bg.png?1629431947229" alt="">
+            </div>
+            <div class="header__input-content">
+                <ul class="header__input-list">
+                    <li class="header__input-item">
+                        <span class="header__input-hotline">
+                            <i class="header__input-icon ti-mobile"></i>
+                            Hotline: 
+                            <a href="" class="header__input-hotline-link">1900 6750</a>
+                        </span>
+                    </li>
+                </ul>
+                
+                <ul class="header__input-list">
+                    <div class="header__input-img">
+                        <img class="header__input-img-link" src="//bizweb.dktcdn.net/100/366/378/themes/736342/assets/logo.png?1629431966576" alt="">
+                    </div>
+                    <div class="header__input-pag">
+                        <a href="index.php" class="">Trang chủ</a>
+                        > Giới thiệu
+                    </div>
+                </ul>
+
+                <ul class="header__input-list">
+                    <div class="header__input-list-right">
+                        <li class="header__input-item">
+                            <a href="" class="header__input-item-link">
+                                <i class="header__input-icon ti-search"></i>
+								
+                                Tìm kiếm
+                            </a>
+                            <div class="header__input-search">
+                                <!-- <input class="header__input-search-item" type="text" placeholder="Nhập từ tìm kiếm..."> -->
+                                <!-- <i class="header__input-icon ti-search"></i> --> 
+                                
+                            </div>
+                        </li>
+                        <li class="header__input-item header__input--has-account">
+                            <a href="" class="header__input-item-link">
+                                <i class="header__input-icon ti-user"></i>
+                                <span class="header__input-item-account">Tài khoản</span>  
+                            </a>
+                            <!-- <div class="header__input-user">
+                                <ul class="header__input-user-menu">
+                                    <li class="header__input-user-item js-login">
+                                        <a>Đăng nhập</a>
+                                    </li>
+                                    <li class="header__input-user-item js-register">
+                                        <a>Đăng ký</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+    
+                        </li>
+                        <li class="header__input-item header__input--has-cart">
+                            <a href="" class="header__input-item-link">
+                                <i class="header__input-icon ti-bag"></i>
+                                Giỏ hàng 
+                            </a>
+                            <!-- <div class="header__input-cart">
+                                <span class="header__input-cart-item">
+                                    Không có sản phẩm nào.
+                                </span>
+                            </div> -->
+                        </li>    
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="title" data-aos="zoom-in" data-aos-duration="1000">
+            <h2>VỀ CHÚNG TÔI</h2> 
+			<hr/>
+        </div>		
+		
+        <div class="row">
+            <div class="column" >
+                <div class="column1-row1" data-aos="fade-up-right" data-aos-duration="1500">
+                    <h3>CHÀO MỪNG BẠN ĐẾN VỚI EVO CAKE.</h3> <hr/> <br/>
+	                <p class="text1">Evo Cake là thương hiệu thuộc quyền sở hữu của tập đoàn Evo Group, một trong những tập đoàn hàng đầu châu Âu về ngành ẩm thực cao cấp.</p>
+	                <p class="text2">Evo Cake là thương hiệu sản xuất đồ ăn nhanh như bánh, hamburger. Trong những dịp lễ hay sinh nhật, bánh kem của Evo Cake luôn là một trong những lựa chọn hàng đầu, bởi
+	                hương vị độc đáo, mẫu bánh đẹp. Hay những chiếc hamburger đầy đủ dinh dưỡng, phù hợp với khẩu vị của người Việt. Bên cạnh đó, chúng tôi còn có trà sữa với hương vị độc đáo, mới
+                    lạ chỉ có ở Evo Cake.	</p>
+	                <div class="lienket"><a href="../thucdon/index.html" class="csw-btn-button" rel="nofollow">XEM MENU</a> 
+					</div>
+                </div>
+	        <div class="bod1">	 
+	            <div class="column1-row2">
+	                <div class="muc1" data-aos="fade-right" data-aos-duration="100000000000000000">
+	                    <img src="https://cdn1.iconfinder.com/data/icons/shopping-223/33/shopping-02-512.png" alt="icon" class="icon">
+	                    Dịch vụ chuyên nghiệp, giao hàng tiện lợi
+	                </div>
+	                <div class="muc2" data-aos="fade-right" data-aos-duration="90000000000000000000000000000000000">
+	                    <img src="https://cdn0.iconfinder.com/data/icons/celebration-15/64/open-box-surprise-boxing-day-gift-256.png" alt="icon" class="icon">
+	                    Giá thành hợp lí, nhiều ưu đãi
+	                </div>
+	            </div>
+	        </div>
+            </div>
+  
+            <div class="column" >
+                <div class="column2-row1" data-aos="fade-up-left" data-aos-duration="1500">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="https://bizweb.dktcdn.net/100/366/378/themes/736342/assets/evo_about.jpg?1629431966576" alt="cake1" class="a">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="https://bizweb.dktcdn.net/thumb/grande/100/366/378/articles/banh-tao-my-5.jpg?v=1568864442690" alt="cake2" class="a">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="https://kenh14cdn.com/thumb_w/660/2019/3/21/miyama2-15531403832981246650996.jpg" alt="cake3" class="a">
+                        </div>
+                    </div>
+					<br/>
+                        <div class="dot3">
+                            <span class="dot" onclick="currentSlide(0)"></span> 
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                        </div>  
+	            </div> 
+	            <div class="bod2">
+	                <div class="column2-row2">
+	                    <div class="muc3" data-aos="fade-left" data-aos-duration="100000000000000000">
+	                        <img src="https://cdn1.iconfinder.com/data/icons/corporate-management-2/48/vector_881_16-512.png" alt="icon" class="icon">
+	                        Sức khỏe của khách hàng luôn đặt lên hàng đầu
+						</div>
+	                    <div class="muc4" data-aos="fade-left" data-aos-duration="90000000000000000000000000000000000">
+	                        <img src="https://cdn1.iconfinder.com/data/icons/food-and-drinks-21/64/apple-cake-dessert-pie-homemade-food-256.png" alt="icon" class="icon"> 
+	                        Hương vị độc đáo, hấp dẫn
+	                    </div>
+	                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	        <!-- Begin: Footer -->
+        <div class="footer">
+            <div class="grid">
+                <div class="footer__menu">
+                    <div class="footer__list">
+                        <div class="footer__list--register">
+                            <div class="footer--register-title">
+                                Đăng ký nhận tin
+                            </div>
+                            <div class="footer--register-des">
+                                Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.
+                            </div>
+                            <input type="email" placeholder="Email của bạn" class="footer--register-email">
+                            <a href="" class="footer--register-email-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            
+                            </input>
+                        </div>
+    
+                        <div class="footer__list--address">
+                            <a href="" class="footer--address-logo">
+                                <img class="footer--address-logo-img" src="http://bizweb.dktcdn.net/100/366/378/themes/736342/assets/logo.png?1629431966576" alt="">
+                            </a>
+                            <div class="footer--address-des">
+                                Địa chỉ: 70 Lu Gia, Ward 15, District 11, Ho Chi Minh City
+                            </div>
+                            <div class="footer--address-phone">
+                                Điện thoại: 
+                                <a href="">19006750</a> 
+                            </div>
+                            <div class="footer--address-email">
+                                Email: 
+                                <a href="">EvoCake@gmail.com</a> 
+                            </div>
+                        </div>
+    
+                        <div class="footer__list--commit">
+                            <div class="footer--commit-title">
+                                Cam kết của chúng tôi
+                            </div>
+                            <div class="footer--commit-item">
+                                <span class="footer--commit-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <span class="footer--commit-des">Bãi giữ xe miễn phí rộng rãi</span>
+                            </div>
+                            <div class="footer--commit-item">
+                                <span class="footer--commit-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <span class="footer--commit-des">Nhân viên tư vấn sản phẩm nhiệt tình</span>
+                            </div>
+                            <div class="footer--commit-item">
+                                <span class="footer--commit-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <span class="footer--commit-des">Thực phẩm tươi sống giá rẻ như giá chợ</span>
+                            </div>
+                            <div class="footer--commit-item">
+                                <span class="footer--commit-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <span class="footer--commit-des">Thanh toán tiền mặt hoặc thẻ ATM,...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__social">
+                <div class="footer__separation"></div>
+                <div class="footer__social-list">
+                    <i class="footer__social-icon ti-facebook"></i>
+                    <i class="footer__social-icon ti-twitter-alt"></i>
+                    <i class="footer__social-icon fab fa-instagram"></i>
+                    <i class="footer__social-icon fab fa-youtube"></i>
+                </div>
+                <div class="footer__copyright">
+                    © Bản quyền thuộc về Evo Themes | Cung cấp bởi Group 1
+                </div>
+            </div>
+        </div>
+        <!-- End: Footer -->
+
+    <script>
+        AOS.init();
+  
+     //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          
+          slideIndex++;
+          
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          
+          setTimeout(showSlides, 5000);
+      }
+      
+      showSlides(slideIndex = 0);
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+      } 
+    </script>
+</body>
+</html>
